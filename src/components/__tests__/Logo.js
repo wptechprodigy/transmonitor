@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import Logo from '../Logo';
 
-test('renders learn react link', () => {
+test('renders logo title', () => {
   const { getByText } = render(<Logo />);
-  const linkElement = getByText(/Transmonitor/i);
+  const linkElement = getByText(/Logo/i);
   expect(linkElement).toBeInTheDocument();
 });
