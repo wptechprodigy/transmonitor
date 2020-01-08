@@ -35,6 +35,7 @@ const Span = styled.span`
 
   & span {
     display: flex;
+    margin-bottom: 0.9375rem;
 
     & img {
       margin-right: 0.9375rem;
