@@ -9,10 +9,6 @@ const file = {
       {
         name: 'FAQ',
         path: '/faq'
-      },
-      {
-        name: 'Notification',
-        path: '/notification'
       }
     ]
   },
