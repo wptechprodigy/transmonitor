@@ -50,6 +50,7 @@ const Span = styled.span`
 
 const A = styled.a`
   font-family: 'Segoe UI';
+  color: #647787;
   text-decoration: none;
   font-size: 0.6875rem;
   line-height: 0.9375rem;
