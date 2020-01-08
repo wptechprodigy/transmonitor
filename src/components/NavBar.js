@@ -22,7 +22,6 @@ const NavBarSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   height: 60px;
   padding: 15px 80px 15px 42px;
   box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
