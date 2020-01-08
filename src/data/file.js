@@ -11,7 +11,7 @@ import merchantProfile from '../assets/merchant-profile.svg';
 
 const file = {
   navItems: {
-    logoTitle: 'Transmonitor',
+    logoTitle: 'TransMonitor',
     navLinks: [
       {
         name: 'Support',
