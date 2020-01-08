@@ -7,6 +7,7 @@ function SideBarLinks({ sideBarItems }) {
     <div>
       <SideBarLink category={sideBarItems.mainCategory} />
       <SideBarLink category={sideBarItems.paymentCategory} />
+      <SideBarLink category={sideBarItems.OrdersCategory} />
     </div>
   )
 }
