@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Heading3 from './Heading3';
+import TransactionLabel from './TransactionLabel';
 
 function TransactionCharts() {
   return (
@@ -11,6 +12,9 @@ function TransactionCharts() {
       <span>
         <span>
           <Heading3 title='Orders' />
+          <TransactionLabel label='Pending Orders: 20' />
+          <TransactionLabel label='Reconciling Orders: 80' />
+          <TransactionLabel label='Total Orders: 100' />
         </span>
         <span>
           <Heading3 title='Payments' />
@@ -36,7 +40,7 @@ const Section = styled.section`
     border-right: 3px solid #EEF8FD;
   }
 
-  & span:last-child > span:first-child {
+  & span:last-child span:first-child {
     border-bottom: 3px solid #EEF8FD;
   }
 `;
