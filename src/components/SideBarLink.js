@@ -14,7 +14,7 @@ function SideBarLink({ category }) {
       <MenuCategory menuName={name} />
       {links.map(({ icon, linkName, path, active }) => {
         return (
-          <span>
+          <span key={linkName}>
             <Icon name={icon} />
             <A as='a' href={path}>{linkName}</A>
           </span>
