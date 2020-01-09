@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-function UserName({ username }) {
+function UserName({ username = 'Jon' }) {
   return <P>{username}</P>
 }
 
 UserName.propTypes = {
-  greeting: PropTypes.string.isRequired
+  username: PropTypes.string.isRequired
 }
 
 const P = styled.p`
