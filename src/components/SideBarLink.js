@@ -14,7 +14,7 @@ function SideBarLink({ category }) {
       <MenuCategory menuName={name} />
       {links.map(({ icon, linkName, path, active }) => {
         return (
-          <span>
+          <span key={linkName}>
             <Icon name={icon} />
             <A as='a' href={path}>{linkName}</A>
           </span>
@@ -50,6 +50,7 @@ const Span = styled.span`
 
 const A = styled.a`
   font-family: 'Segoe UI';
+  color: #647787;
   text-decoration: none;
   font-size: 0.6875rem;
   line-height: 0.9375rem;

@@ -11,7 +11,7 @@ Heading1.propTypes = {
 }
 
 const H1 = styled.h1`
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   color: #1875F0;
   font-weight: 900;
   font-size: 1.50rem;

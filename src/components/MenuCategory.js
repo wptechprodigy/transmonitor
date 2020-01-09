@@ -12,6 +12,7 @@ MenuCategory.propTypes = {
 
 const H3 = styled.h3`
   font-family: 'Segoe UI';
+  font-weight: normal;
   font-size: 0.6875rem;
   line-height: 0.9375rem;
   color: #647787;

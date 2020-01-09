@@ -7,12 +7,15 @@ import file from './data/file'
 import ContentArea from './components/ContentArea';
 
 function App() {
-  const { navItems, sideBarItems } = file;
+  const { navItems, sideBarItems, transactionSummary } = file;
 
   return (
     <Router>
       <NavBar navItems={navItems} />
-      <ContentArea sideBarItems={sideBarItems} />
+      <ContentArea
+        sideBarItems={sideBarItems}
+        transactionSummary={transactionSummary}
+      />
     </Router>
   );
 }
