@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import MenuCategory from './MenuCategory';
 import Icon from './Icon';
 
-
-
 function SideBarLink({ category }) {
   const { name, links } = category;
 
