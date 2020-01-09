@@ -3,7 +3,46 @@ import styled from 'styled-components';
 import Heading3 from './Heading3';
 import TransactionLabel from './TransactionLabel';
 
+const transactions = {
+  orders: [
+    {
+      label: 'Pending Orders',
+      value: '20',
+      color: '#FDC203'
+    },
+    {
+      label: 'Reconciling Orders',
+      value: '80',
+      color: '#27AE60'
+    },
+    {
+      label: 'Total Orders',
+      value: '100',
+      color: '#1875F0'
+    }
+  ],
+  payments: [
+    {
+      label: 'Un-reconcilled Payments',
+      value: '20',
+      color: '#FDC203'
+    },
+    {
+      label: 'Reconcilled Payments',
+      value: '80',
+      color: '#27AE60'
+    },
+    {
+      label: 'Total Payments',
+      value: '100',
+      color: '#1875F0'
+    }
+  ]
+}
+
 function TransactionCharts() {
+  const { orders, payments } = transactions;
+
   return (
     <Section>
       <span>
@@ -12,12 +51,11 @@ function TransactionCharts() {
       <span>
         <span>
           <Heading3 title='Orders' />
-          <TransactionLabel label='Pending Orders: 20' />
-          <TransactionLabel label='Reconciling Orders: 80' />
-          <TransactionLabel label='Total Orders: 100' />
+          {orders.map(({ label, value, color }) => <TransactionLabel color={color} label={label} value={value} />)}
         </span>
         <span>
           <Heading3 title='Payments' />
+          {payments.map(({ label, value, color }) => <TransactionLabel color={color} label={label} value={value} />)}
         </span>
       </span>
     </Section>
@@ -37,11 +75,7 @@ const Section = styled.section`
 
   & span:first-child {
     width: 65%;
-    border-right: 3px solid #EEF8FD;
-  }
-
-  & span:last-child span:first-child {
-    border-bottom: 3px solid #EEF8FD;
+    /* border-right: 3px solid #EEF8FD; */
   }
 `;
 
