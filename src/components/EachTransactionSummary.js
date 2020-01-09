@@ -42,7 +42,7 @@ const Span = styled.span`
   border: 1px solid #EEF8FD;
   box-sizing: border-box;
   border-radius: 2px;
-  margin-left: 35px;
+  margin-left: 25px;
   padding: 18px;
 
   & div {
