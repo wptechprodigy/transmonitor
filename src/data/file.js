@@ -85,6 +85,28 @@ const file = {
         },
       ]
     }
+  },
+  transactionSummary: {
+    daily: [
+      {
+        label: 'Daily Transaction Volume',
+        value: '2,342'
+      },
+      {
+        label: 'Daily Transaction Value',
+        value: 'N4,000,000'
+      }
+    ],
+    total: [
+      {
+        label: 'Total Transaction Volume',
+        value: '452,000'
+      },
+      {
+        label: 'Total Transaction Value',
+        value: 'N4,000,000'
+      }
+    ]
   }
 }
 
