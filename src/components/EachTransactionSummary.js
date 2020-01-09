@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import smallChart from '../assets/small-chart.svg'
 
 import SummaryLabel from './SummaryLabel';
 import SummaryValue from './SummaryValue';
+import Icon from './Icon';
 
 function EachTransactionSummary({ summaryDetail }) {
   return (
@@ -15,7 +17,7 @@ function EachTransactionSummary({ summaryDetail }) {
               <SummaryValue value={value} />
             </div>
             <div>
-              <img src='chart' alt='chart' />
+              <Icon name={smallChart} />
             </div>
           </Span>
         )
