@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 function TransactionLabel({ label, value, color }) {
-  console.log(color)
   return <Label>{label}: <Span color={color}>{value}</Span></Label>
 }
 
