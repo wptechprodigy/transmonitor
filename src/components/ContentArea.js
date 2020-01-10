@@ -5,7 +5,7 @@ import SideBarLinks from './SideBarLinks';
 import TransactionsSummary from './TransactionsSummary';
 import TransactionCharts from './TransactionCharts';
 
-function ContentArea({ sideBarItems, transactionSummary }) {
+function ContentArea({ sideBarItems, transactionSummary, transactions }) {
   return (
     <Section>
       <SideBar>
@@ -14,7 +14,7 @@ function ContentArea({ sideBarItems, transactionSummary }) {
       </SideBar>
       <MainContent>
         <TransactionsSummary summary={transactionSummary} />
-        <TransactionCharts />
+        <TransactionCharts transactions={transactions} />
       </MainContent>
     </Section>
   );
