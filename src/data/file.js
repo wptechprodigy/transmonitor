@@ -107,6 +107,42 @@ const file = {
         value: 'N4,000,000'
       }
     ]
+  },
+  transactions: {
+    orders: [
+      {
+        label: 'Pending Orders',
+        value: '20',
+        color: '#FDC203'
+      },
+      {
+        label: 'Reconciling Orders',
+        value: '80',
+        color: '#27AE60'
+      },
+      {
+        label: 'Total Orders',
+        value: '100',
+        color: '#1875F0'
+      }
+    ],
+    payments: [
+      {
+        label: 'Un-reconcilled Payments',
+        value: '20',
+        color: '#FDC203'
+      },
+      {
+        label: 'Reconcilled Payments',
+        value: '80',
+        color: '#27AE60'
+      },
+      {
+        label: 'Total Payments',
+        value: '100',
+        color: '#1875F0'
+      }
+    ]
   }
 }
 
