@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Heading3 from './Heading3';
 import TransactionLabel from './TransactionLabel';
+import ProgressBar from './ProgressBar';
 
 function TransactionCharts({ transactions }) {
   const { orders, payments } = transactions;
@@ -15,11 +16,13 @@ function TransactionCharts({ transactions }) {
       <span>
         <span>
           <Heading3 title='Orders' />
-          {orders.map(({ label, value, color }) => <TransactionLabel color={color} label={label} value={value} />)}
+          <ProgressBar percent={Number(orders[1].value)} />
+          {orders.map(({ label, value, color }) => <TransactionLabel key={label} color={color} label={label} value={value} />)}
         </span>
         <span>
           <Heading3 title='Payments' />
-          {payments.map(({ label, value, color }) => <TransactionLabel color={color} label={label} value={value} />)}
+          <ProgressBar percent={Number(payments[1].value)} />
+          {payments.map(({ label, value, color }) => <TransactionLabel key={label} color={color} label={label} value={value} />)}
         </span>
       </span>
     </Section>
