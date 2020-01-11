@@ -5,11 +5,12 @@ import dayjs from 'dayjs';
 
 function Today() {
   const today = new Date();
-  const [day, setDay] = useState(dayjs(today).format('DD, MMM YYYY'));
+  const formatedDay = dayjs(today).format('DD, MMM YYYY');
+  const [day, setDay] = useState(formatedDay);
 
   useEffect(() => {
-    setDay(dayjs(today).format('DD, MMM YYYY'));
-  }, [today]);
+    setDay(formatedDay);
+  }, [formatedDay]);
 
   return <H2>Today: {day}</H2>
 }
