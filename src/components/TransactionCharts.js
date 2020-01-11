@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Heading3 from './Heading3';
 import TransactionLabel from './TransactionLabel';
 import ProgressBar from './ProgressBar';
+import Today from './Today';
 
 function TransactionCharts({ transactions }) {
   const { orders, payments } = transactions;
@@ -11,7 +12,12 @@ function TransactionCharts({ transactions }) {
   return (
     <Section>
       <Chart>
-        <p>Chart goes here</p>
+        <ChartHeading>
+          <Today />
+        </ChartHeading>
+        <Graph>
+          chart
+        </Graph>
       </Chart>
       <TransactionOverview>
         <OrderOverview>
@@ -41,10 +47,23 @@ const Section = styled.section`
 `;
 
 const Chart = styled.section`
+  display: flex;
+  flex-direction: column;
   width: 65%;
   border-right: 4px solid #EEF8FD;
+`;
+
+const ChartHeading = styled.span`
+  display: block;
   padding-left: 30px;
   padding-right: 30px;
+`;
+
+const Graph = styled(Chart)`
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  /* border: 1px solid #000; */
 `;
 
 const TransactionOverview = styled.section`
