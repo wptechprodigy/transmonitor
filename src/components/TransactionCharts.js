@@ -5,6 +5,7 @@ import Heading3 from './Heading3';
 import TransactionLabel from './TransactionLabel';
 import ProgressBar from './ProgressBar';
 import Today from './Today';
+import ChartScroller from './ChartScroller';
 
 function TransactionCharts({ transactions }) {
   const { orders, payments } = transactions;
@@ -14,6 +15,7 @@ function TransactionCharts({ transactions }) {
       <Chart>
         <ChartHeading>
           <Today />
+          <ChartScroller />
         </ChartHeading>
         <Graph>
           chart
@@ -38,8 +40,8 @@ function TransactionCharts({ transactions }) {
 const Section = styled.section`
   display: flex;
   width: 100%;
-  min-width: 1068px;
-  min-height: 330px;
+  min-width: 66.75rem;
+  min-height: 21.88rem;
   background: #FFFFFF;
   border: 1px solid #EEF8FD;
   border-radius: 2px;
@@ -54,7 +56,9 @@ const Chart = styled.section`
 `;
 
 const ChartHeading = styled.span`
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 30px;
   padding-right: 30px;
 `;
