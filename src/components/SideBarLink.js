@@ -25,7 +25,7 @@ function SideBarLink({ category }) {
 const Span = styled.span`
   display: flex;
   flex-direction: column;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 
   & h3:first-child {
     margin: 0.9375rem 0;

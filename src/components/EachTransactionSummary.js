@@ -29,6 +29,10 @@ function EachTransactionSummary({ summaryDetail }) {
 const Section = styled.section`
   display: flex;
   justify-content: space-between;
+
+  & span:last-child {
+    margin-left: 1.25rem;
+  }
 `;
 
 const Span = styled.span`
@@ -42,7 +46,6 @@ const Span = styled.span`
   border: 1px solid #EEF8FD;
   box-sizing: border-box;
   border-radius: 2px;
-  margin-left: 25px;
   padding: 18px;
 
   & div {
