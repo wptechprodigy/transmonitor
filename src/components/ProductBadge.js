@@ -16,7 +16,7 @@ function productBadge({ value, color = '#CCCFD4' }) {
 const Badge = styled.span`
   display: flex;
   place-items: center;
-  width: 80%;
+  min-width: 75%;
   height: 2.063rem;
   border: 1px solid ${props => props.color};
   border-radius: 1.875rem;
