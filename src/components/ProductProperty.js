@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function ProductProperty({ value }) {
-  return <Property>{value}</Property>
+function ProductProperty({ value, color }) {
+  return <Property color={color}>{value}</Property>
 }
 
 const Property = styled.h4`
@@ -11,7 +11,7 @@ const Property = styled.h4`
   font-weight: normal;
   font-size: 0.875rem;
   line-height: 1.188rem;
-  color: #7F8FA4;
+  color: ${props => props.color || '#7F8FA4'};
 `;
 
 export default ProductProperty;
