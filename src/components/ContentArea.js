@@ -6,6 +6,7 @@ import SideBarLinks from './SideBarLinks';
 import TransactionsSummary from './TransactionsSummary';
 import TransactionCharts from './TransactionCharts';
 import Payments from './Payments';
+import TransactionTable from './TransactionTable';
 
 function ContentArea({ sideBarItems, transactionSummary, transactions }) {
   return (
@@ -18,6 +19,7 @@ function ContentArea({ sideBarItems, transactionSummary, transactions }) {
         <TransactionsSummary summary={transactionSummary} />
         <TransactionCharts transactions={transactions} />
         <Payments />
+        <TransactionTable />
       </MainContent>
     </Section>
   );
@@ -38,7 +40,7 @@ const SideBar = styled.section`
 const MainContent = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: #E5E5E5;
+  background: #E5E5E5;
   padding-top: 2.188rem;
   padding-left: 1.875rem;
   padding-right: 5rem;
