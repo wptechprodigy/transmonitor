@@ -13,4 +13,3 @@ const Dot = styled.span`
 `;
 
 export default StatusIndicator;
-
