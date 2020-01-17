@@ -31,7 +31,7 @@ const Section = styled.section`
   justify-content: space-between;
 
   & span:last-child {
-    margin-left: 1.25rem;
+    margin-left: 0.625rem;
   }
 `;
 
@@ -39,9 +39,7 @@ const Span = styled.span`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 280px;
   height: 75px;
-  width: 100%;
   background: #FFFFFF;
   border: 1px solid #EEF8FD;
   box-sizing: border-box;
@@ -51,6 +49,7 @@ const Span = styled.span`
   & div {
     display: flex;
     flex-direction: column;
+    margin-right: 0.938rem;
   }
 `;
 

@@ -6,6 +6,8 @@ import TransactionLabel from './TransactionLabel';
 import ProgressBar from './ProgressBar';
 import Today from './Today';
 import ChartScroller from './ChartScroller';
+import Icon from './Icon';
+import bigChart from '../assets/big-graph.svg';
 
 function TransactionCharts({ transactions }) {
   const { orders, payments } = transactions;
@@ -18,7 +20,7 @@ function TransactionCharts({ transactions }) {
           <ChartScroller />
         </ChartHeading>
         <Graph>
-          chart
+          <Icon name={bigChart} />
         </Graph>
       </Chart>
       <TransactionOverview>
@@ -67,7 +69,11 @@ const Graph = styled(Chart)`
   width: 100%;
   height: 100%;
   padding: 0;
-  /* border: 1px solid #000; */
+
+  & img {
+    width: 100%;
+    margin-top: 4.063rem;
+  }
 `;
 
 const TransactionOverview = styled.section`

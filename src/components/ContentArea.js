@@ -5,6 +5,7 @@ import Button from './Button';
 import SideBarLinks from './SideBarLinks';
 import TransactionsSummary from './TransactionsSummary';
 import TransactionCharts from './TransactionCharts';
+import Payments from './Payments';
 
 function ContentArea({ sideBarItems, transactionSummary, transactions }) {
   return (
@@ -16,6 +17,7 @@ function ContentArea({ sideBarItems, transactionSummary, transactions }) {
       <MainContent>
         <TransactionsSummary summary={transactionSummary} />
         <TransactionCharts transactions={transactions} />
+        <Payments />
       </MainContent>
     </Section>
   );
