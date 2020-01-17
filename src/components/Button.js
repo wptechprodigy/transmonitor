@@ -3,11 +3,17 @@ import styled from 'styled-components';
 
 function Button({ btnName = 'Button' }) {
   return (
-    <span>
+    <Span>
       <GenInvoice style={{backgroundColor: '#27AE60'}}>{btnName}</GenInvoice>
-    </span>
+    </Span>
   )
 }
+
+const Span = styled.span`
+  & button:hover {
+    cursor: pointer;
+  }
+`;
 
 const GenInvoice = styled.button`
   font-family: 'Roboto';
