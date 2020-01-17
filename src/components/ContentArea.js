@@ -28,7 +28,7 @@ function ContentArea({ sideBarItems, transactionSummary, transactions }) {
 const Section = styled.section`
   display: grid;
   grid-template-columns: 18% 82%;
-  height: 100vh;
+  height: auto;
 `;
 
 const SideBar = styled.section`
@@ -44,6 +44,7 @@ const MainContent = styled.section`
   padding-top: 2.188rem;
   padding-left: 1.875rem;
   padding-right: 5rem;
+  padding-bottom: 65px;
 `;
 
 export default ContentArea;
