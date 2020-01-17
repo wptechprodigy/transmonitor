@@ -94,7 +94,7 @@ const file = {
       },
       {
         label: 'Daily Transaction Value',
-        value: 'N4,000,000'
+        value: '₦4,000,000'
       }
     ],
     total: [
@@ -104,7 +104,7 @@ const file = {
       },
       {
         label: 'Total Transaction Value',
-        value: 'N4,000,000'
+        value: '₦4,000,000'
       }
     ]
   },
