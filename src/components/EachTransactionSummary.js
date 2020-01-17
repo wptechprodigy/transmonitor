@@ -49,6 +49,10 @@ const Span = styled.span`
   & div {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  & div:first-child {
     margin-right: 0.938rem;
   }
 `;
