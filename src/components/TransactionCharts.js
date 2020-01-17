@@ -42,7 +42,6 @@ function TransactionCharts({ transactions }) {
 const Section = styled.section`
   display: flex;
   width: 100%;
-  min-width: 66.75rem;
   min-height: 21.88rem;
   background: #FFFFFF;
   border: 1px solid #EEF8FD;
