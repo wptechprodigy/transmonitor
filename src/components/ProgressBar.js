@@ -13,7 +13,7 @@ function ProgressBar({ percent }) {
 
 const Tracker = styled.span`
   display: block;
-  width: 19.06rem;
+  width: 90%;
   height: 0.25rem;
   background-color: #FDC203;
   margin-top: 0.625rem;
