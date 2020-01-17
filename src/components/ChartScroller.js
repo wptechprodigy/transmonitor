@@ -18,11 +18,12 @@ const Scroller = styled.span`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 0.625rem;
 
   & img {
     cursor: pointer;
   }
-  
+
   & img:last-child {
     margin-left: 0.625rem;
   }
