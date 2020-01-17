@@ -6,6 +6,11 @@ import ProductTitle from './ProductTitle';
 import ProductProperty from './ProductProperty';
 import ArrowDown from './ArrowDown';
 
+import productsTransactions from '../data/productsTransactions';
+import ProductBadge from './ProductBadge';
+import productThumbnail from '../assets/product-thumbnail.svg';
+import Icon from './Icon';
+
 const tableHeads = [
   'Item Type',
   'Price',
@@ -22,22 +27,20 @@ function TransactionTable() {
         <tr>
           {tableHeads.map(tableHead => <TableHeadings label={tableHead} />)}
         </tr>
-        <tr>
-          <td><ProductTitle title='Apple Mac Book 15” 250 SSD 12GB' /></td>
-          <td><ProductProperty value='$73430' /></td>
-          <td><ProductProperty value='1234567890' /></td>
-          <td><ProductProperty value='12:30' /></td>
-          <td><ProductProperty value='Reconcilled' /></td>
-          <td><ArrowDown /></td>
-        </tr>
-        <tr>
-          <td><ProductTitle title='Apple Mac Book 15” 250 SSD 12GB' /></td>
-          <td><ProductProperty value='$73430' /></td>
-          <td><ProductProperty value='1234567890' /></td>
-          <td><ProductProperty value='12:30' /></td>
-          <td><ProductProperty value='Reconcilled' /></td>
-          <td><ArrowDown /></td>
-        </tr>
+        {productsTransactions.map((eachTransaction) => {
+          const { productName, price, transactionNo, time, status } = eachTransaction;
+
+          return (
+            <tr>
+              <td><Icon name={productThumbnail} /><ProductTitle title={productName} /></td>
+              <td><ProductProperty value={price} /></td>
+              <td><ProductProperty value={transactionNo} /></td>
+              <td><ProductProperty value={time} /></td>
+              <td><ProductBadge color='#27AE60' value={status} /></td>
+              <td><ArrowDown /></td>
+            </tr>
+          )
+        })}
       </Table>
     </Section>
   )
@@ -64,6 +67,19 @@ const Table = styled.table`
   & td {
     background: #fff;
     border-bottom: 0.0625rem solid #CCCFD4;
+  }
+
+  & td:first-child {
+    display: flex;
+    border-bottom: 0.0625rem solid #CCCFD4;
+  }
+
+  & h4 {
+    display: inline;
+  }
+
+  & img {
+    margin-right: 25px;
   }
 `;
 
